@@ -6,10 +6,12 @@ struct toaDo
     float x, y;
 };
 
-void nhapXuat(struct toaDo a) {
+void nhap(struct toaDo a) {
     printf("Toa do nhap x, y: ");
     scanf("%f%f", &a.x, &a.y);
-    printf("x = %f y = %f\n", a.x, a.y);
+}
+void Xuat(struct toaDo a) {
+    printf("%f%f", a.x, a.y);
 }
 
 void khoangCach(struct toaDo a, struct toaDo b) {
@@ -29,8 +31,8 @@ void tamGiac(struct toaDo a, struct toaDo b, struct toaDo c) {
 
 void diemDoiXung(struct toaDo a, struct toaDo b) {
     struct toaDo c;
-    c.x = 2 * a.x - b.x;
-    c.y = 2 * a.y - b.y;
+    c.x = 2 * b.x - a.x;
+    c.y = 2*b.y - a.y;
     printf("xc = %f yc = %f\n", c.x, c.y);
 }
 
@@ -38,8 +40,8 @@ int main() {
     struct toaDo a;
     struct toaDo b;
     struct toaDo c;
-    nhapXuat(a);
-    nhapXuat(b);
-    nhapXuat(c);
+    nhap(a);
+    nhap(b);
+    nhap(c);
     tamGiac(a, b, c);
 }

@@ -61,7 +61,7 @@ void xoa1SV(struct sinhvien sv[], int n) {
     xuat(sv, n);
 }
 void them1SV(struct sinhvien sv[], int n) {
-     n ++;
+    n ++;
     for(int i = 0; i < n; i ++) {
     printf("Sinh Vien thu %d ", i);
     printf("\n Nhap ma so sinh vien:");
@@ -69,16 +69,16 @@ void them1SV(struct sinhvien sv[], int n) {
 	printf("\n Nhap Ten SV: ");
 	fpurge(stdin);
 	gets(sv[i].tensv);
-	 printf("\n Nhap Lop :");
-	 gets(sv[i].lop);
-	 fpurge(stdin);
-	 printf("\n nhap diem mon toan :");
-	 scanf("%f",&sv[i].diemtoan);
-	 printf("\n nhap diem mon van :");
-	 scanf("%f",&sv[i].diemvan);
-	 printf("\n nhap diem mon anh van:");
-	 scanf("%f",&sv[i].diemanh); 
-    }
+	printf("\n Nhap Lop :");
+	gets(sv[i].lop);
+	fpurge(stdin);
+	printf("\n nhap diem mon toan :");
+	scanf("%f",&sv[i].diemtoan);
+	printf("\n nhap diem mon van :");
+	scanf("%f",&sv[i].diemvan);
+	printf("\n nhap diem mon anh van:");
+	scanf("%f",&sv[i].diemanh); 
+}
     printf("luc sau");
     xuat(sv, n);
 }
